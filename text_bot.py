@@ -12,9 +12,18 @@ st.title("AI Text Generation App")
 st.markdown(
     """
     <style>
+    /* Custom input border and focus style */
     .stTextInput>div>div>input {
         border: 2px solid lightgreen; /* Light green border for input */
     }
+    
+    /* Remove the red outline on focus */
+    .stTextInput>div>div>input:focus {
+        outline: none;
+        border: 2px solid lightgreen; /* Keep the light green border on focus */
+    }
+
+    /* Custom button style */
     .stButton>button {
         background-color: green; /* Green button */
         color: white;
