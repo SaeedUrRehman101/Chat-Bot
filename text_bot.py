@@ -44,6 +44,18 @@ st.markdown(
         background-color: darkgreen; /* Keep dark green on click */
         color: white !important; /* Force the text to stay white even when clicked */
     }
+
+    /* Override unwanted red color on focus */
+    .stButton>button:focus:not(:active) {
+        border-color: lightgreen !important; /* Keep the light green border */
+        color: white !important;  /* Force the text to stay white */
+    }
+
+    /* Ensure focus does not change the color to red */
+    .st-emotion-cache-1igbibe:focus:not(:active) {
+        border-color: lightgreen !important; /* Override red border color */
+        color: white !important;  /* Override red text color */
+    }
     </style>
     """, unsafe_allow_html=True
 )
