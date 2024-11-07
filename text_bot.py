@@ -1,5 +1,5 @@
 # streamlit_app.py
-
+import torch
 import streamlit as st
 from transformers import pipeline
 
