@@ -42,7 +42,7 @@ st.markdown(
     /* Ensure button text color stays white even when clicked */
     .stButton>button:active {
         background-color: darkgreen; /* Keep dark green on click */
-        color: white; /* Text stays white */
+        color: white !important; /* Force the text to stay white even when clicked */
     }
     </style>
     """, unsafe_allow_html=True
