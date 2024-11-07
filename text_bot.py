@@ -26,14 +26,17 @@ st.markdown(
     /* Custom button style */
     .stButton>button {
         background-color: green; /* Green button */
-        color: white;
+        color: white;  /* White text on the button */
         border: none;
         border-radius: 5px;
         padding: 10px 20px;
         cursor: pointer;
     }
+
+    /* Change button color on hover */
     .stButton>button:hover {
-        background-color: darkgreen; /* Dark green on hover */
+        background-color: darkgreen; /* Dark green background on hover */
+        color: white; /* Ensure the text color remains white on hover */
     }
     </style>
     """, unsafe_allow_html=True
