@@ -60,8 +60,8 @@ st.markdown(
     """, unsafe_allow_html=True
 )
 
-# Text input for prompt
-prompt = st.text_input("Enter your prompt:", "What is AI?")
+# Text input for prompt with placeholder
+prompt = st.text_input("Enter your prompt:", placeholder="What is AI?")
 
 # Check if the input is empty and show a warning message
 if st.button("Generate Response"):
